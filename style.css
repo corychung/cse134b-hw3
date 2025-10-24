@@ -5,7 +5,7 @@
 }
 
 :root {
-        --background-color: #ffffff;
+    --background-color: #ffffff;
     --background-highlight: #000000;
     --text-color: #0000ff;
     --text-color-hover: #007bff;
@@ -61,4 +61,13 @@ main {
     section {
         display: flex;
     }
+}
+
+footer {
+    background-color: var(--background-color);
+    border: 1px solid var(--background-highlight);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
 }

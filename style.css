@@ -11,3 +11,32 @@ body {
     --text-color: #0000ff;
     --text-color-hover: #007bff;
 }
+
+header {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--background-highlight);
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            a {
+                text-decoration: none;
+                display:block;
+                color: var(--text-color);
+            }
+            a:hover {
+                color: var(--text-color-hover);
+            }
+        }
+        button {
+            background: none;
+            border: none;
+            padding: 0.5rem 2rem;
+        }
+    }
+}

@@ -12,6 +12,10 @@ body {
     --text-color-hover: #007bff;
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 header {
     background-color: var(--background-color);
     border-bottom: 1px solid var(--background-highlight);

@@ -4,12 +4,15 @@
     padding: 0;
 }
 
-body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --background-color: #ffffff;
+:root {
+        --background-color: #ffffff;
     --background-highlight: #000000;
     --text-color: #0000ff;
     --text-color-hover: #007bff;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @view-transition {

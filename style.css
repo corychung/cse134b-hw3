@@ -58,6 +58,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
     section {
         display: flex;
         flex-direction: column;
@@ -67,6 +75,41 @@ main {
     .project-grid {
         display: flex;
         justify-content: center;
+        margin: 1rem;
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        project-card {
+            width: 100%;
+            height: fit-content;
+            border: 1px solid black;
+            padding: 1rem;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            picture img {
+                object-fit: cover;
+                width: 300px;
+                height: 200px;
+            }
+            a {
+                text-decoration: none;
+                color: var(--text-color);
+                padding: 0.5rem;
+                border: 1px solid var(--background-highlight);
+                border-radius: 1rem;
+                background-color: var(--background-color)
+            }
+            a:hover{
+                color: var(--text-color-hover);
+            }
+        }
+    }
+    .project-grid.coming-soon project-card picture img {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
     }
     #social-links {
         display: flex;
@@ -106,4 +149,24 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 1rem 1.5rem;
+}
+
+dialog {
+    margin: auto;
+    padding: 2rem;
+    header {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.5em;
+        cursor: pointer;
+        border: 1px solid var(--background-highlight);
+        background-color: var(--text-color-hover);
+        color: var(--background-color);
+    }
 }

@@ -14,11 +14,20 @@
   src: url(media/Satoshi-Variable.woff2) format("woff2-variations"); 
 }
 
+@media only screen and (max-width: 800px) {
+  .project-grid {
+    flex-direction: column;
+  }
+}
+
 :root {
     --background-color: #f9f6ff;
     --background-highlight: #000000;
-    --text-color: #0000ff;
-    --text-color-hover: #007bff;
+    --text-color: #7b7bc3;
+    --text-color-hover: #6868be;
+    --text-color-active: #5656be;
+    --border-settings: 2px solid #7b7bc3;
+    --border-radius: 0.5rem;
 }
 
 body {
@@ -34,16 +43,26 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
 }
 
+h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+
 @view-transition {
     navigation: auto;
 }
 
 header {
     background-color: var(--background-color);
-    border-bottom: 1px solid var(--background-highlight);
+    border-bottom: var(--border-settings);
     nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem 1.5rem;
         ul {
@@ -54,6 +73,8 @@ header {
                 text-decoration: none;
                 display:block;
                 color: var(--text-color);
+                font-weight: 600;
+                font-family: "Clash Display";
             }
             a:hover {
                 color: var(--text-color-hover);
@@ -74,32 +95,20 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1 {
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
-    h2 {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
     section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: fit-content;
     }
     .project-grid {
         display: flex;
         justify-content: center;
         margin: 1rem;
-        h2 {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
         project-card {
             width: 100%;
             height: fit-content;
-            border: 1px solid black;
             padding: 1rem;
             display:flex;
             flex-direction: column;
@@ -108,18 +117,23 @@ main {
                 object-fit: cover;
                 width: 300px;
                 height: 200px;
+                border: var(--border-settings);
+                border-radius: var(--border-radius);
             }
             a {
+                background-color: var(--text-color);
                 text-decoration: none;
-                color: var(--text-color);
+                color: var(--background-color);
                 padding: 0.5rem;
-                border: 1px solid var(--background-highlight);
-                border-radius: 1rem;
-                background-color: var(--background-color)
+                border-radius: var(--border-radius);
+                &:hover{
+                    background-color: var(--text-color-hover);
+                }
+                &:active {
+                    background-color: var(--text-color-active);
+                }
             }
-            a:hover{
-                color: var(--text-color-hover);
-            }
+
         }
     }
     .project-grid.coming-soon project-card picture img {
@@ -131,12 +145,12 @@ main {
         display: flex;
         justify-content: center;
         padding: 2rem;
-        border: 1px solid var(--background-highlight);
+        border: var(--border-settings);
     }
     form {
         display: flex;
         flex-direction: column;
-        border: 1px solid var(--background-highlight);
+        border: var(--border-settings);
         padding: 2rem;
         gap: 0.5rem;
         width: 50vw;
@@ -148,10 +162,10 @@ main {
         }
         button {
             padding: 0.5rem;
-            border-radius: 0.5em;
+            border-radius: var(--border-radius);
             margin-top: 1rem;
             cursor: pointer;
-            border: 1px solid var(--background-highlight);
+            border: var(--border-settings);
             background-color: var(--text-color-hover);
             color: var(--background-color);
         }
@@ -160,7 +174,8 @@ main {
 
 footer {
     background-color: var(--background-color);
-    border: 1px solid var(--background-highlight);
+    border: var(--border-settings);
+    border-radius: var(--border-radius);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -179,9 +194,9 @@ dialog {
     button {
         margin-top: 1rem;
         padding: 0.5rem;
-        border-radius: 0.5em;
+        border-radius: var(--border-radius);
         cursor: pointer;
-        border: 1px solid var(--background-highlight);
+        border: var(--border-settings);
         background-color: var(--text-color-hover);
         color: var(--background-color);
     }

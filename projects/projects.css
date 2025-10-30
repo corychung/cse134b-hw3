@@ -1,0 +1,29 @@
+@import "../style.css";
+
+article {
+    max-width:80vw;
+    margin: auto;
+    h1 {
+        text-align: center;
+        padding: 1rem 0rem;
+
+    }
+    picture img {
+        width:80%;
+        height: auto;
+        display: block;
+        margin: auto;
+        border: 1px solid black;
+    }
+    section {
+        margin: 2rem;
+        h2,h3,p {
+            margin: 1rem 0rem;
+        }
+        iframe {
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+}
+

@@ -45,6 +45,10 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--heading-text-color);
 }
 
+p {
+    color: var(--heading-text-color);
+}
+
 h1 {
     font-size: 2rem;
     margin: 1rem 0;
@@ -75,7 +79,7 @@ header {
                 text-decoration: none;
                 display:block;
                 color: var(--text-color);
-                font-weight: 600;
+                font-weight: 500;
                 font-family: "Clash Display";
             }
             a:hover {
@@ -115,10 +119,12 @@ main {
             display:flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             picture img {
                 object-fit: cover;
-                width: 300px;
-                height: 200px;
+                width: 100%;
+                height: fit-content;
+                aspect-ratio: 4/3;
                 border: var(--border-settings);
                 border-radius: var(--border-radius);
             }
@@ -183,6 +189,10 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 1rem 1.5rem;
+    & p {
+        font-family: "Clash Display", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+    }
 }
 
 dialog {

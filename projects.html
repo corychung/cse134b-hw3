@@ -95,11 +95,15 @@
         <header>
             <h3>Pick a theme!</h3>
         </header>
-        <section>
-            <button type="button" data-theme="light">Light</button>
-            <button type="button" data-theme="dark">Dark</button>
-        </section>
+        <form>
+            <input id="light" name="theme" type="radio" data-theme="light" checked></input>
+            <label for="light">Light</label>
+            <br>
+            <input name="theme" type="radio" data-theme="dark"></input>
+            <label for="dark">Dark</label>
+        </form>
         <footer>
+            <p>Color theming will not persist across pages.</p>
             <button commandfor="themeDialog" command="close">Close</button>
         </footer>
     </dialog>

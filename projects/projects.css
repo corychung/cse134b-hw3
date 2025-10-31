@@ -1,7 +1,7 @@
 @import "../style.css";
 
 article {
-    max-width:80vw;
+    max-width: 1000px;
     margin: auto;
     h1 {
         text-align: center;
@@ -16,7 +16,8 @@ article {
         border: 1px solid black;
     }
     section {
-        margin: 2rem;
+        width: 80%;
+        margin: auto;
         h2,h3,p {
             margin: 1rem 0rem;
         }

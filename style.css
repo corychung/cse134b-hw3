@@ -85,7 +85,7 @@
             font-weight: 600;
             font-size: 1.5rem;
             text-decoration: none;
-            color: var(--heading-text-color);
+            color: var(--text-color);
         }
         nav {
             max-width: 1200px;
@@ -119,6 +119,9 @@
             cursor: pointer;
             border: none;
             text-align: right;
+            svg path {
+                stroke: var(--text-color);
+            }
         }
     }
 

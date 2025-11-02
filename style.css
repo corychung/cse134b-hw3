@@ -10,7 +10,7 @@
 
 
 @layer base {
-    
+
     @view-transition {
         navigation: auto;
     }
@@ -18,7 +18,6 @@
         font-family: "Clash Display"; 
         src: url(media/ClashDisplay-Variable.woff2) format("woff2-variations"); 
     }
-
     @font-face {
         font-family: "Satoshi"; 
         src: url(media/Satoshi-Variable.woff2) format("woff2-variations"); 
@@ -59,8 +58,9 @@
         color: var(--heading-text-color);
     }
 
-    p, label {
+    p, label, button, li, a, legend {
         color: var(--heading-text-color);
+        list-style: none;
     }
 
     h1 {
@@ -70,6 +70,11 @@
     h2 {
         font-size: 1.5rem;
         margin: 1rem 0;
+    }
+
+    picture img {
+        border: var(--border-settings);
+        border-radius: var(--border-radius);
     }
 }
 
@@ -104,8 +109,8 @@
                 background-color: var(--background-color);
                 a {
                     text-decoration: none;
-                    display:block;
-                    color: var(--text-color);
+                    display: block;
+                    color: var(--heading-text-color);
                     font-weight: 500;
                     font-family: "Clash Display";
                 }
@@ -184,16 +189,28 @@
         }
         #social-links {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             padding: 2rem;
             border: var(--border-settings);
+            width: fit-content;
+            section {
+                margin: 0rem 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 7rem;
+            }
         }
-        form {
+        form,.page-section {
+            text-align: center;
             display: flex;
             flex-direction: column;
             border: var(--border-settings);
             border-radius: var(--border-radius);
             padding: 2rem;
+            margin: 1rem;
             gap: 0.5rem;
             width: 50vw;
             input {
@@ -211,12 +228,19 @@
                 background-color: var(--text-color-hover);
                 color: var(--background-color);
             }
+            ul,p,label,input,fieldset {
+                text-align: left;
+            }
+            img {
+                width: 80%;
+                height: auto;
+            }
         }
     }
 
     footer {
         background-color: var(--background-color);
-        border: var(--border-settings);
+        border-top: var(--border-settings);
         border-radius: var(--border-radius);
         display:flex;
         align-items: center;
@@ -270,7 +294,7 @@
 
 @layer mobile-override {
     @media only screen and (max-width: 600px) {
-    .project-grid {
+    .project-grid, #social-links {
         flex-direction: column;
     }
     header {

@@ -64,7 +64,7 @@
         color: var(--heading-text-color);
     }
 
-    p, label, button, li, a, legend, figcaption {
+    p, label, button, li, a, legend, figcaption, details, summary {
         color: var(--heading-text-color);
     }
 
@@ -244,8 +244,17 @@
                 background-color: var(--text-color-hover);
                 color: var(--background-color);
             }
-            ul,p,label,input,fieldset {
+            ul,p,label,input,fieldset,summary {
                 text-align: left;
+            }
+            details,summary {
+                align-self: start;
+                text-align: left;
+                list-style-position: inside;
+                p, li {
+                    padding: 1rem 0rem;
+                    font-style: italic;
+                }
             }
             img {
                 width: 60%;

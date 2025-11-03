@@ -1,3 +1,11 @@
+/** TO DO
+    1. Add picture tags and smaller images
+    2. Fix file structure HTML
+    3. Verify CSS structure
+    4. Write content for projects, about
+    5. Find social links
+*/
+
 @layer reset, base, layout, components, mobile-override;
 
 @layer reset {
@@ -236,6 +244,7 @@
                 height: auto;
             }
         }
+
     }
 
     footer {
@@ -249,6 +258,35 @@
         & p {
             font-family: "Clash Display", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
+        }
+    }
+    
+    /* For project pages */
+    article {
+        max-width: 1000px;
+        margin: auto;
+        h1 {
+            text-align: center;
+            padding: 1rem 0rem;
+
+        }
+        picture img {
+            width:80%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+        section {
+            width: 80%;
+            margin: auto;
+            h2,h3,p {
+                margin: 1rem 0rem;
+            }
+            iframe {
+                width: 100%;
+                border: 1px solid black;
+            }
         }
     }
 }

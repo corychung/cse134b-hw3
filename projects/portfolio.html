@@ -33,9 +33,11 @@
       <article>
         <h1>Personal Portfolio Site (CSE 134B)</h1>
           <picture>
-            <source srcset="../media/images/portfolio_thumbnail.png" media="(min-width:800px)" />
-            <img src="../media/images/portfolio_thumbnail.png" alt="Portfolio Personal Site Thumbnail" width="300" />
-          </picture>  
+              <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-600.webp" media="(max-width: 600px)" type="image/webp">
+              <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-1200.webp" media="(max-width: 1200px)" type="image/webp">
+              <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-2000.webp" type="image/webp">
+              <img src="/media/images/portfolio_thumbnail/portfolio_thumbnail.png" alt="Picture of the code behind this portfolio site" loading="lazy">
+          </picture>
         <section>
           <h2>What is this portfolio site?</h2>
           <p>As part of my web development course at UC San Diego (CSE 134B), I worked on a personal portfolio site, building it all from scratch using HTML, CSS, and JS.</p>

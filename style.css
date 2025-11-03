@@ -184,7 +184,6 @@
                     object-fit: cover;
                     width: 100%;
                     max-width: 400px;
-                    height: fit-content;
                     aspect-ratio: 4/3;
                     border: var(--border-settings);
                     border-radius: var(--border-radius);
@@ -207,8 +206,8 @@
             }
         }
         #social-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            flex-direction: row;;
             gap: 2rem;
             align-items: center;
             border: var(--border-settings);

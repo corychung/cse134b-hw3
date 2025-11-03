@@ -330,6 +330,7 @@
         margin: auto;
         text-align: center;
         padding: 1rem 2rem;
+        color: var(--heading-text-color);
         background-color: var(--background-color);
         border: var(--border-settings);
         border-radius: var(--border-radius);
@@ -358,7 +359,8 @@
             flex-direction: column;
             gap: 1rem;
             border: none;
-            padding: 1rem 0rem;
+            margin-top: 1rem;
+            padding: 0rem 0rem 1rem;
         }
     }
 }

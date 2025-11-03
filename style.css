@@ -1,6 +1,5 @@
 /** TO DO
     3. Verify CSS structure
-    4. Write content for projects, about
 */
 
 @layer reset, base, layout, components, mobile-override;

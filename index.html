@@ -32,7 +32,7 @@
     <main>
         <section>
             <h1>Cory Chung's Personal Portfolio</h1>
-            <p>Welcome! This is my site for my "maker portfolio", or anything that I do that isn't related to my UI/UX career! Feel free to explore.</p>
+            <p>Welcome! This is my site for my personal projects! Feel free to explore.</p>
             <div class="project-grid">
                 <project-card>
                     <picture>
@@ -51,10 +51,13 @@
                     <a href="projects/odin.html">View Now</a><br>
                 </project-card>
                 <project-card>
-                    <picture>
-                        <source srcset="media/images/openfolder.png" media="(min-width:800px)" />
-                        <img alt="Picture of folder to see more projects" src="media/images/openfolder.png" width="300" >
-                    </picture>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="svgTitle svgDescription">
+                        <title id="svgTitle">Folder</title>
+                        <desc id="svgDescription">
+                            Icon of a folder indicating future or other projects.
+                        </desc>>
+                        <path d="M245,110.64A16,16,0,0,0,232,104H216V88a16,16,0,0,0-16-16H130.67L102.94,51.2a16.14,16.14,0,0,0-9.6-3.2H40A16,16,0,0,0,24,64V208h0a8,8,0,0,0,8,8H211.1a8,8,0,0,0,7.59-5.47l28.49-85.47A16.05,16.05,0,0,0,245,110.64ZM93.34,64,123.2,86.4A8,8,0,0,0,128,88h72v16H69.77a16,16,0,0,0-15.18,10.94L40,158.7V64Zm112,136H43.1l26.67-80H232Z"></path>
+                    </svg>
                     <h2>See All Projects</h2>
                     <a href="projects.html">See More</a><br>
                 </project-card>
@@ -78,7 +81,7 @@
             <label for="dark">Dark</label>
         </form>
         <footer>
-            <p><sup>Color theming will not persist across pages.<sup></p>
+            <p>Color theming will not persist across pages.</p>
             <button commandfor="themeDialog" command="close">Close</button>
         </footer>
     </dialog>

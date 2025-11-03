@@ -1,5 +1,4 @@
 /** TO DO
-    1. Add picture tags and smaller images
     3. Verify CSS structure
     4. Write content for projects, about
 */
@@ -271,6 +270,47 @@
             }
         }
 
+        /* For project pages */
+        article {
+            max-width: 1000px;
+            text-align: left;
+            margin: auto;
+            h1 {
+                text-align: center;
+            }
+            figure {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            figcaption {
+                margin: auto;
+                margin-top: 0.5rem;
+                font-style: italic;
+                width: 80%;
+            }
+            picture img {
+                width: 80%;
+                height: auto;
+                display: block;
+                margin: 0rem auto 1rem;
+                border: 1px solid black;
+            }
+            section {
+                width: 80%;
+                margin: auto;
+                h2,h3,p {
+                    margin: 0rem 0rem 1rem;
+                    align-self: start;
+                }
+                iframe {
+                    width: 100%;
+                    border: 1px solid black;
+                }
+            }
+            ul {
+                list-style-position: inside;
+            }
+        }
     }
 
     footer {
@@ -286,46 +326,6 @@
         p {
             font-family: "Clash Display", Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
-        }
-    }
-
-    /* For project pages */
-    article {
-        max-width: 1000px;
-        margin: auto;
-        h1 {
-            text-align: center;
-            padding: 1rem 0rem;
-        }
-        figure {
-            text-align: center;
-        }
-        figcaption {
-            margin: auto;
-            margin-top: 0.5rem;
-            font-style: italic;
-            width: 80%;
-        }
-        picture img {
-            width: 80%;
-            height: auto;
-            display: block;
-            margin: auto;
-            border: 1px solid black;
-        }
-        section {
-            width: 80%;
-            margin: auto;
-            h2,h3,p {
-                margin: 1rem 0rem;
-            }
-            iframe {
-                width: 100%;
-                border: 1px solid black;
-            }
-        }
-        ul {
-            list-style-position: inside;
         }
     }
 }

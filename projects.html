@@ -36,9 +36,11 @@
             <div class="project-grid">
                 <project-card>
                     <picture>
-                        <source srcset="media/images/duender.png" media="(min-width:800px)" />
-                        <img src="media/images/duender.png" alt="Duender 3D Printer" width="300" />
-                    </picture>  
+                        <source srcset="/media/images/duender/duender-600.webp" media="(max-width: 600px)" type="image/webp">
+                        <source srcset="/media/images/duender/duender-1200.webp" media="(max-width: 1200px)" type="image/webp">
+                        <source srcset="/media/images/duender/duender-2000.webp" type="image/webp">
+                        <img src="/media/images/duender/duender.png" alt="Screenshot of the 3D model of the Duender 3D printer" loading="lazy">
+                    </picture>
                     <h2>DIY 3D Printer (Duender)</h2>
                     <p>Creating a fully featured CoreXY 3D printer completely from scratch.</p>
                     <a href="projects/duender.html">View Now</a><br>
@@ -54,8 +56,10 @@
                 </project-card>
                 <project-card>
                     <picture>
-                        <source srcset="media/images/portfolio_thumbnail.png" media="(min-width:800px)" />
-                        <img alt="Picture of this portfolio site" src="media/images/portfolio_thumbnail.png" width="300" >
+                        <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-600.webp" media="(max-width: 600px)" type="image/webp">
+                        <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-1200.webp" media="(max-width: 1200px)" type="image/webp">
+                        <source srcset="/media/images/portfolio_thumbnail/portfolio_thumbnail-2000.webp" type="image/webp">
+                        <img src="/media/images/portfolio_thumbnail/portfolio_thumbnail.png" alt="Picture of the code behind this portfolio site" loading="lazy">
                     </picture>
                     <h2>This Portfolio Site!</h2>
                     <p>The very site you're on right now, built from scratch in HTML and CSS (no JS!)</p>

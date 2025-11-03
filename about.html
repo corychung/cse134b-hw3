@@ -33,10 +33,12 @@
         <h1>About Me</h1>
         <p>Learn more about me!</p>
         <section class="page-section">
-            <picture>
-                <source srcset="media/images/cory.webp" media="(min-width:800px)" />
-                <img alt="Picture of Cory Chung" src="media/images/cory.webp" width="300px" >
-            </picture>
+        <picture>
+            <source srcset="/media/images/cory/cory-600.webp" media="(max-width: 600px)" type="image/webp">
+            <source srcset="/media/images/cory/cory-1200.webp" media="(max-width: 1200px)" type="image/webp">
+            <source srcset="/media/images/cory/cory-2000.webp" type="image/webp">
+            <img src="/media/images/cory/cory.jpg" alt="Portrait of Cory Chung">
+        </picture>
             <section>
                 <h2>Who is Cory?</h2>
                 <p>Hi, I'm Cory. Currently a UCSD student pursuing UX design as a career path and minoring in Computer Science. However, outside of career and academia, I love making and creating things and learning more about tech. Hopefully some of my projects can give you a good idea of what I like to do in my free time, from 3D printing to frontend web dev. I'm also interested in AI and the startup world and would love to pursue opportunities related to that. Always looking for something new to make!</p>

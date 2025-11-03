@@ -64,7 +64,7 @@
         color: var(--heading-text-color);
     }
 
-    p, label, button, li, a, legend {
+    p, label, button, li, a, legend, figcaption {
         color: var(--heading-text-color);
     }
 
@@ -279,10 +279,18 @@
         h1 {
             text-align: center;
             padding: 1rem 0rem;
-
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            margin: auto;
+            margin-top: 0.5rem;
+            font-style: italic;
+            width: 80%;
         }
         picture img {
-            width:80%;
+            width: 80%;
             height: auto;
             display: block;
             margin: auto;
@@ -298,6 +306,9 @@
                 width: 100%;
                 border: 1px solid black;
             }
+        }
+        ul {
+            list-style-position: inside;
         }
     }
 }

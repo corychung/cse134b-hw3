@@ -421,7 +421,7 @@
             #burger-menu {
                 display: inline-block;
                 text-align:left;
-                color: var(--text-color, black);
+                color: var(--heading-text-color, black);
                 font-weight: 500;
                 font-family: "Clash Display";
                 font-size: 1rem;

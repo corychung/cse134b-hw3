@@ -291,7 +291,7 @@
                 width: 80%;
                 align-items: start;
                 margin: auto;
-                h2,h3,p,figcaption,iframe {
+                h2,h3,p,iframe {
                     margin: 0rem 0rem 1rem;
                 }
                 iframe {
@@ -361,7 +361,7 @@
         .project-grid, #social-links {
             flex-direction: column;
         }
-        section {
+        article section, article picture img {
             width: 100%;
         }
         header {

@@ -176,14 +176,20 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                picture {
+                    width: 100%;
+                    max-width: 400px;
+                    aspect-ratio: 4 / 3;
+                    display: block;
+                }
                 picture img, svg {
                     object-fit: cover;
                     width: 100%;
-                    max-width: 400px;
+                    height: 100%;
+                    display: block;
                     aspect-ratio: 4/3;
                     border: var(--border-settings, 1px solid black);
                     border-radius: var(--border-radius, 0.5rem);
-
                 }
                 h2, p {
                     margin: 1rem 0rem 0rem;

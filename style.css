@@ -417,6 +417,7 @@
         article section, article picture img {
             width: 100%;
         }
+        /* Mobile menu navbar */
         header {
             #burger-menu {
                 display: inline-block;
@@ -443,11 +444,11 @@
                     padding: 2rem;
                     border-bottom: var(--border-settings, 1px solid black);
 
-                    /* Animate popover opening */
+                    /* Animate popover menu opening */
                     opacity: 1;
                     transform: translateY(0);
                     li {
-                        width: 100%
+                        width: 100%;
                     }
                     @starting-style {
                         opacity: 0;
